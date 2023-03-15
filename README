@@ -59,3 +59,12 @@ for details.
 
 Add the following entry into "settings.json", under "settings" key:
     "latex-workshop.latex.search.rootFiles.exclude": ["**/sampleReport.tex"]
+    
+    
+How to push if have problem when push:
+in GitBash terminal
+$git add .
+
+git commit -m "Descriptive commit message"
+
+git push origin master
