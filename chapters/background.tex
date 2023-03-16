@@ -22,66 +22,24 @@ Subsubsection 2 text
 
 
 \subsection{React}
-
+    React เป็นไลบรารี JavaScript ที่ช่วยให้ผู้พัฒนาสามารถสร้าง User Interface (UI) ได้อย่างง่ายดายและมีประสิทธิภาพ โดย React เน้นการสร้าง UI ที่มีการอัปเดตสถานะ (state) 
+และการใช้งาน Component ในการแบ่งแยกหน้าที่การแสดงผลออกจากโค้ดหลัก โดย React นั้นได้รับความนิยมเนื่องจากมีความยืดหยุ่นสูง รองรับการพัฒนาแอปพลิเคชันแบบ Single Page Application (SPA) 
+และสามารถใช้งานร่วมกับไลบรารีและเครื่องมืออื่น ๆ ได้อย่างคล่องตัว
+    React มีโครงสร้างหลัก 3 ส่วน คือ Element, Component และ JSX โดย Element เป็นตัวแทนของ Element ใน HTML สามารถสร้าง Element ได้โดยใช้ React.createElement() 
+และ Component เป็นส่วนประกอบของ UI ที่มีการจัดการข้อมูลและการแสดงผลโดยเฉพาะ สามารถสร้าง Component ด้วยการสร้าง Class หรือ Function และ JSX เป็นการเขียนโค้ดของ React 
+ที่ผสมผสานระหว่าง JavaScript และ HTML ซึ่งจะถูกแปลงเป็น JavaScript โดย Babel\cite{React}
 % define a command that produces some filler text, the lorem ipsum.
-\newcommand{\loremipsum}{
-  \textit{Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-  minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-  aliquip ex ea commodo consequat. Duis aute irure dolor in
-  reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-  pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-  culpa qui officia deserunt mollit anim id est laborum.}\par}
 
-\begin{figure}
-  \centering
-
-  \fbox{
-     \parbox{.6\textwidth}{\loremipsum}
-  }
 
   % To include an image in the figure, say myimage.pdf, you could use
   % the following code. Look up the documentation for the package
   % graphicx for more information.
   % \includegraphics[width=\textwidth]{myimage}
 
-  \caption[Sample figure]{This figure is a sample containing \gls{lorem ipsum},
-  showing you how you can include figures and glossary in your report.
-  You can specify a shorter caption that will appear in the List of Figures.}
-  \label{fig:sample-figure}
-\end{figure}
-
-Using \verb.\label. and \verb.\ref. commands allows us to refer to
-figures easily. If we can refer to Figures \ref{fig:sample-figure} by name in the {\LaTeX}
-source code, then we will not need to update the code that refers to it
-even if the placement or ordering of the figures changes.
-
-\loremipsum\loremipsum
-
 % This code demonstrates how to get a landscape table or figure. It
 % uses the package lscape to turn everything but the page number into
 % landscape orientation. Everything should be included within an
 % \afterpage{ .... } to avoid causing a page break too early.
-\afterpage{
-  \begin{landscape}
-  \begin{table}
-    \caption{Sample landscape table}
-    \label{tab:sample-table}
-
-    \centering
-
-    \begin{tabular}{c||c|c}
-        Year & A & B \\
-        \hline\hline
-        1989 & 12 & 23 \\
-        1990 & 4 & 9 \\
-        1991 & 3 & 6 \\
-    \end{tabular}
-  \end{table}
-  \end{landscape}
-}
-
-\loremipsum\loremipsum\loremipsum
 
 \section{Overfull hbox}
 
