@@ -15,33 +15,53 @@
 \section{\ifenglish Project scope\else ขอบเขตของโครงงาน\fi}
 
 \subsection{\ifenglish Hardware scope\else ขอบเขตด้านฮาร์ดแวร์\fi}
-โมเดล จะมีการทำงานภายในสำนักหอสมุด มหาวิทยาลัยเชียงใหม่
+\begin{itemize}
+    \item การใช้งาน ESP32 with OV2640 และติดตั้งในหอสมุดมหาวิทยาลัยเชียงใหม่ สำหรับ Object Detection
+    \item การเชื่อมต่อ ESP32 กับ PC เพื่อส่งภาพจากกล้องมาที่ PC เพื่อประมวลผล
+\end{itemize}
 \subsection{\ifenglish Software scope\else ขอบเขตด้านซอฟต์แวร์\fi}
+\begin{itemize}
+    \item การใช้งาน MongoDB เพื่อเก็บข้อมูลเกี่ยวกับที่นั่งที่ว่างอยู่ในหอสมุด
+    \item การใช้งาน OpenCV ร่วมกับ TensorFlow model เพื่อทำ Object Detection และนับจำนวนคนที่อยู่ในภาพ
+    \item การพัฒนา Web application สำหรับเข้าถึงข้อมูลที่นั่งที่ว่างอยู่
+\end{itemize}
 
 \section{\ifenglish Expected outcomes\else ประโยชน์ที่ได้รับ\fi}
-
+\begin{enumerate}
+   \item นักศึกษาไม่ต้องเสียเวลาในการเดินวนหาที่นั่งว่างอยู่ในแต่ละชั้นของหอสมุด
+   \item นักศึกษาสามารถใช้เวลาที่มีได้อย่างมีประสิทธิภาพมากยิ่งขึ้นในการอ่านหนังสือหรือทำงานในหอสมุด
+   \item หอสมุดสามารถจัดการและปรับปรุงที่นั่งได้อย่างมีประสิทธิภาพ 
+\end{enumerate}
 \section{\ifenglish Technology and tools\else เทคโนโลยีและเครื่องมือที่ใช้\fi}
 
 \subsection{\ifenglish Hardware technology\else เทคโนโลยีด้านฮาร์ดแวร์\fi}
 \begin{itemize}
     \item ESP32-CAM with OV2640
+    \item Acer Nitro 5
+    \item acer aspire 7
 \end{itemize}
 \subsection{\ifenglish Software technology\else เทคโนโลยีด้านซอฟต์แวร์\fi}
 \begin{itemize}
-    \item figma
+    \item Figma
     \item Python
     \item MongoDB
     \item React
     \item Node.js
-    \item Visual Studio Code    
+    \item Visual Studio Code
+    \item OpenCV
+    \item Tensorflow
+    \item Arduino IDE    
 \end{itemize}
 \section{\ifenglish Project plan\else แผนการดำเนินงาน\fi}
 
-\begin{plan}{11}{2022}{3}{2023}
+\begin{plan}{11}{2022}{10}{2023}
     \planitem{11}{2022}{12}{2022}{ศึกษาค้นคว้าข้อมูลในการทำโครงงาน}
-    \planitem{12}{2020}{1}{2023}{ทดสอบการทำงานของ model}
-    \planitem{2}{2021}{2}{2021}{ทดสอบระบบของ application}
-    \planitem{12}{2019}{1}{2022}{เขียนรายงานและนำเสนอ}
+    \planitem{12}{2022}{2}{2023}{ทดสอบการทำงานของ model ที่เลือกใช้}
+    \planitem{2}{2023}{3}{2023}{เขียนรายงานและเตรียมนำเสนอ}
+    \planitem{4}{2023}{6}{2023}{ออกแบบ Web Application}
+    \planitem{6}{2023}{7}{2023}{ทดสอบการทำงานของ Web Application และติดตั้งอุปกรณ์}
+    \planitem{8}{2023}{9}{2023}{ปรับปรุงและพัฒนาโครงงานให้ดีขึ้น}
+    \planitem{9}{2023}{10}{2023}{สรุปผล ทำรายงาน และเตรียมนำเสนอ}
 \end{plan}
 
 \section{\ifenglish Roles and responsibilities\else บทบาทและความรับผิดชอบ\fi}
