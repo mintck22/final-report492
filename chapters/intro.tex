@@ -15,8 +15,16 @@
 \section{\ifenglish Project scope\else ขอบเขตของโครงงาน\fi}
 
 \subsection{\ifenglish Hardware scope\else ขอบเขตด้านฮาร์ดแวร์\fi}
-โมเดล จะมีการทำงานภายในสำนักหอสมุด มหาวิทยาลัยเชียงใหม่
+\begin{itemize}
+    \item การใช้งาน ESP32 with OV2640 และติดตั้งในหอสมุดมหาวิทยาลัยเชียงใหม่ สำหรับ Object Detection
+    \item การเชื่อมต่อ ESP32 กับ PC เพื่อส่งภาพจากกล้องมาที่ PC เพื่อประมวลผล
+\end{itemize}
 \subsection{\ifenglish Software scope\else ขอบเขตด้านซอฟต์แวร์\fi}
+\begin{itemize}
+    \item การใช้งาน MongoDB เพื่อเก็บข้อมูลเกี่ยวกับที่นั่งที่ว่างอยู่ในหอสมุด
+    \item การใช้งาน OpenCV ร่วมกับ TensorFlow model เพื่อทำ Object Detection และนับจำนวนคนที่อยู่ในภาพ
+    \item การพัฒนา Web application สำหรับเข้าถึงข้อมูลที่นั่งที่ว่างอยู่
+\end{itemize}
 
 \section{\ifenglish Expected outcomes\else ประโยชน์ที่ได้รับ\fi}
 \begin{enumerate}
