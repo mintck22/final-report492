@@ -16,7 +16,7 @@
 \section{การทดลองครั้งที่ 1 โดยใช้ OpenCV with HOG descriptor}
 \hspace{10mm}HOG (Histograms of Oriented Gradients) descriptor เป็น library ที่ทาง OpenCV มีให้ใช้
 ซึ่งใช้ร่วมกับ SVM Classifier ที่ได้รับการ train มาแล้วจาก cv2.HOGDescriptor\textunderscore getDefaultPeopleDetector()
-ในการจำแนกว่าเป็นคนหรือไม่ใช่คน
+ในการจำแนกว่าเป็นคนหรือไม่ใช่คน\cite{OpenHOG}
 
 \begin{figure}[ht]
     \centering
@@ -28,7 +28,7 @@
 \hspace{10mm} ผลลัพธ์ที่ได้คือสามารถตรวจจับคนในภาพได้จำนวน 8 คน ซึ่งได้จำนวนมากกว่าความเป็นจริง และตรวจจับได้ในส่วนที่ไม่ใช่คนอีกด้วย
 \newpage
 \section{การทดลองครั้งที่ 2 โดยใช้ OpenCV with Detect common object library}
-\hspace{10mm}Detect common object library เป็น library ที่ทาง OpenCV มีให้ใช้ ซึ่งสามารถตรวจจับวัตถุพื้นฐานได้จาก model YOLOv3 แต่ในการทดลองนี้จะเลือกให้ตรวจจับเฉพาะคนเท่านั้น
+\hspace{10mm}Detect common object library เป็น library ที่ทาง OpenCV มีให้ใช้ ซึ่งสามารถตรวจจับวัตถุพื้นฐานได้จาก model YOLOv3 แต่ในการทดลองนี้จะเลือกให้ตรวจจับเฉพาะคนเท่านั้น\cite{OpenYOLO}
 \begin{figure}[ht]
     \centering
     \includegraphics[scale=0.25]{images/cvlib_output.jpg}
@@ -39,7 +39,7 @@
 ผลลัพธ์ที่ได้คือสามารถตรวจจับคนในภาพได้จำนวน 4 คน ซึ่งได้จำนวนน้อยกว่าความเป็นจริง
 \newpage
 \section{การทดลองครั้งที่ 3 โดยใช้ OpenCV DNN with TensorFlow}
-\hspace{10mm} OpenCV มี DNN (Deep Neural Network) module ที่สามารถนำ model จาก TensorFlow มาใช้ได้ โดยการทดลองนี้ได้เลือก model MobileNet-SSD v2 ที่มีความนิยมมาใช้
+\hspace{10mm} OpenCV มี DNN (Deep Neural Network) module ที่สามารถนำ model จาก TensorFlow มาใช้ได้ โดยการทดลองนี้ได้เลือก model MobileNet-SSD v2 ที่มีความนิยมมาใช้\cite{OpenDNN}
 
 \begin{figure}[ht]
     \centering
