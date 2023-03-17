@@ -77,16 +77,12 @@
 \include{chapters/background}
 \include{chapters/approach}
 \include{chapters/eval}
-\ifproject
-\include{chapters/conclusion}
 \fi
 
 \bibliography{report}
 
 \ifproject
 \normalspacing
-\appendix
-\include{chapters/appendix}
 
 %% Display glossary (optional) -- need glossary option.
 \ifglossary\glossarypage\fi
@@ -94,12 +90,5 @@
 %% Display index (optional) -- need idx option.
 \ifindex\indexpage\fi
 
-\begin{biosketch}
-\begin{center}
-  \includegraphics[width=1.5in]{mugshot.jpg}
-\end{center}
-Your biosketch goes here. Make sure it sits inside
-the \texttt{biosketch} environment.
-\end{biosketch}
-\fi % \ifproject
+
 \end{document}
