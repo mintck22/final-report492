@@ -23,7 +23,7 @@
 \begin{figure}[ht]
     \centering
     \includegraphics[scale=1]{images/graph2_zone1-2.png}
-    \caption[กราฟเปรียบเทียบระหว่าง False positive กับ False negative]{กราฟเปรียบเทียบระหว่าง False positive กับ False negative}
+    \caption[กราฟเปรียบเทียบระหว่าง False positive กับ False negative ของโซนที่ 1]{กราฟเปรียบเทียบระหว่าง False positive กับ False negative ของโซนที่ 1}
     \label{fig:graph2-1}
 \end{figure}
 
@@ -48,7 +48,7 @@
 \begin{figure}[ht]
     \centering
     \includegraphics[scale=1]{images/graph2_zone2.png}
-    \caption[graph2-2]{กราฟเปรียบเทียบระหว่าง False positive กับ False negative}
+    \caption[กราฟเปรียบเทียบระหว่าง False positive กับ False negative ของโซนที่ 2]{กราฟเปรียบเทียบระหว่าง False positive กับ False negative ของโซนที่ 2}
     \label{fig:graph2-2}
 \end{figure}
 จากภาพทั้งหมด 185 ภาพ พบว่า Accuracy คือ 0.69 ไม่มี False positive ส่วน False negative สูง
@@ -71,7 +71,7 @@
 \begin{figure}[ht]
     \centering
     \includegraphics[scale=1]{images/graph2_zone3-2.png}
-    \caption[กราฟเปรียบเทียบระหว่าง False positive กับ False negative]{กราฟเปรียบเทียบระหว่าง False positive กับ False negative}
+    \caption[กราฟเปรียบเทียบระหว่าง False positive กับ False negative ของโซนที่ 3]{กราฟเปรียบเทียบระหว่าง False positive กับ False negative ของโซนที่ 3}
     \label{fig:graph2-3}
 \end{figure}
 จากภาพทั้งหมด 94 ภาพ พบว่า Accuracy คือ 0.89 ไม่มี False positive ส่วน False negative ต่ำ
@@ -81,7 +81,7 @@
 \begin{figure}[ht]
     \centering
     \includegraphics[scale=0.5]{images/comparison.png}
-    \caption[comparison]{ตารางเปรียบเทียบผลที่ได้จากทั้ง 3 โซน}
+    \caption[ตารางเปรียบเทียบผลที่ได้จากทั้ง 3 โซน]{ตารางเปรียบเทียบผลที่ได้จากทั้ง 3 โซน}
     \label{fig:comparison}
 \end{figure}
 AWS Rekcognition สามารถทํางานได้มีประสิทธิภาพมากยิ่งขึ้นหากได้ภาพจากกล้องที่มีตําแหน่งเหมาะสม เห็นคนชัด ไม่มีจุดที่สังเกตได้ยาก หรือมุมกล้องที่ไกลเกินไปที่จะ
@@ -91,24 +91,64 @@ AWS Rekcognition สามารถทํางานได้มีประส
 \section{ผลการประเมินความพึงพอใจ}
 แบบประเมินความพึงพอใจจะประเมินอยู่ทั้งหมด 3 ด้าน คือ ด้านความง่ายต่อการใช้งาน (Usability), ด้านประสิทธิภาพ (Perfomance) และด้านตรงตามความต้องการ (Function Requirement) โดยแบ่งกลุ่มผู้ประเมินเป็น 2 กลุ่ม คือ จากนักศึกษาจำนวน 15 คนและทางสำนักหอสมุด 2 คน 
 และระดับการวัดผลคือ 5 หมายถึง ดีมาก, 4 หมายถึง ดี, 3 หมายถึง ปานกลาง, 2 หมายถึง น้อย และ 1 หมายถึง น้อยที่สุด
+
+\newpage
 \subsection{ผลการประเมินความพึงพอใจจากนักศึกษา}
+
+% \begin{table}
+% \caption[ตารางผลการประเมินความพึงพอใจของนักศึกษาด้านความง่ายต่อการใช้งาน (Usability)]{ตารางผลการประเมินความพึงพอใจของนักศึกษาด้านความง่ายต่อการใช้งาน (Usability)}
+% \label{tab:table1}
+% \begin{center}
+% % \begin{tabular}{| m{3cm} | m{2cm}| m{2cm}|m{2cm}|m{2cm}|m{2cm}|m{2cm}|} 
+% \begin{tabular}{|m{13.5em}| m{1.1cm}| m{1.1cm}|m{1.1cm}|m{1.1cm}|m{1.1cm}|m{1.1cm}|}
+%     % \hline
+%     % \textbf{หัวข้อการประเมินความพึงพอใจ} & \multicolumn{5}{c}{\textbf{ระดับการวัดผล}} & \textbf{ค่าเฉลี่ย}\\ 
+%     \hline
+%     \textbf{หัวข้อการประเมินความพึงพอใจ} &\textbf{น้อยที่สุด (1)} & \textbf{น้อย (2)} & \textbf{ปานกลาง (3)} & \textbf{ดี (4)} & \textbf{ดีมาก (5)} & \textbf{ค่าเฉลี่ย}\\
+%     % \hline
+%     % \multicolumn{7}{c}{ด้านความง่ายต่อการใช้งาน (Usability)}
+%     \hline
+%     ความง่ายต่อการใช้งาน & 0&0&3&7&5& 4.13\\
+%     \hline
+%     ความเหมาะสมในการออกแบบหน้าจอโดยภาพรวม & 0&0&6&8&1& 3.67\\
+%     \hline
+%     ความชัดเจนของข้อความที่แสดงบนจอภาพ & 0&0&1&7&7& 4.4\\
+%     \hline
+%     ความสะดวกในการเข้าใช้ระบบ & 0&0&2&7&6& 4.27\\
+%     \hline
+%     ความความน่าใช้ของระบบในภาพรวม & 0&0&3&9&3& 4\\
+%     \hline
+    
+% \end{tabular}
+% \end{center}
+% \end{table}
 \begin{figure}[ht]
     \centering
-    \includegraphics[width=\textwidth]{images/student-u.png}
-    \caption[st-u]{ผลการประเมินความพึงพอใจของนักศึกษาด้านความง่ายต่อการใช้งาน (Usability)}
-    \label{fig:st-u}
+    \includegraphics[width=\textwidth]{images/table-st.png}
+    \caption[ตารางผลการประเมินความพึงพอใจของนักศึกษา]{ตารางผลการประเมินความพึงพอใจของนักศึกษา}
+\label{fig:table-st}
 \end{figure}
+
 \newpage
 \begin{figure}[ht]
     \centering
+    \includegraphics[width=\textwidth]{images/student-u.png}
+    \caption[ผลการประเมินความพึงพอใจของนักศึกษาด้านความง่ายต่อการใช้งาน (Usability)]{ผลการประเมินความพึงพอใจของนักศึกษาด้านความง่ายต่อการใช้งาน (Usability)}
+    \label{fig:st-u}
+\end{figure}
+
+\begin{figure}[ht]
+    \centering
     \includegraphics[width=\textwidth]{images/student-p.png}
-    \caption[st-p]{ผลการประเมินความพึงพอใจของนักศึกษาด้านประสิทธิภาพ (Perfomance)}
+    \caption[ผลการประเมินความพึงพอใจของนักศึกษาด้านประสิทธิภาพ (Perfomance)]{ผลการประเมินความพึงพอใจของนักศึกษาด้านประสิทธิภาพ (Perfomance)}
     \label{fig:st-p}
 \end{figure}
+
+\newpage
 \begin{figure}[ht]
     \centering
     \includegraphics[width=\textwidth]{images/student-f.png}
-    \caption[st-f]{ผลการประเมินความพึงพอใจของนักศึกษาด้านตรงตามความต้องการ (Function Requirement)}
+    \caption[ผลการประเมินความพึงพอใจของนักศึกษาด้านตรงตามความต้องการ (Function Requirement)]{ผลการประเมินความพึงพอใจของนักศึกษาด้านตรงตามความต้องการ (Function Requirement)}
     \label{fig:st-f}
 \end{figure}
 
@@ -116,29 +156,38 @@ AWS Rekcognition สามารถทํางานได้มีประส
 \subsection{ผลการประเมินความพึงพอใจจากทางสำนักหอสมุด}
 \begin{figure}[ht]
     \centering
+    \includegraphics[width=\textwidth]{images/table-st.png}
+    \caption[ตารางผลการประเมินความพึงพอใจของทางสำนักหอสมุด]{ตารางผลการประเมินความพึงพอใจของทางสำนักหอสมุด}
+\label{fig:table-cmul}
+\end{figure}
+
+\newpage
+\begin{figure}[ht]
+    \centering
     \includegraphics[width=\textwidth]{images/cmul-u.png}
-    \caption[cmul-u]{ผลการประเมินความพึงพอใจของทางสำนักหอสมุดด้านความง่ายต่อการใช้งาน (Usability)}
+    \caption[ผลการประเมินความพึงพอใจของทางสำนักหอสมุดด้านความง่ายต่อการใช้งาน (Usability)]{ผลการประเมินความพึงพอใจของทางสำนักหอสมุดด้านความง่ายต่อการใช้งาน (Usability)}
     \label{fig:cmul-u}
 \end{figure}
 \begin{figure}[ht]
     \centering
     \includegraphics[width=\textwidth]{images/cmul-p.png}
-    \caption[cmul-p]{ผลการประเมินความพึงพอใจของทางสำนักหอสมุดด้านประสิทธิภาพ (Perfomance)}
+    \caption[ผลการประเมินความพึงพอใจของทางสำนักหอสมุดด้านประสิทธิภาพ (Perfomance)]{ผลการประเมินความพึงพอใจของทางสำนักหอสมุดด้านประสิทธิภาพ (Perfomance)}
     \label{fig:cmul-p}
 \end{figure}
 \newpage
 \begin{figure}[ht]
     \centering
     \includegraphics[width=\textwidth]{images/cmul-f.png}
-    \caption[cmul-f]{ผลการประเมินความพึงพอใจของทางสำนักหอสมุดด้านตรงตามความต้องการ (Function Requirement)}
+    \caption[ผลการประเมินความพึงพอใจของทางสำนักหอสมุดด้านตรงตามความต้องการ (Function Requirement)]{ผลการประเมินความพึงพอใจของทางสำนักหอสมุดด้านตรงตามความต้องการ (Function Requirement)}
     \label{fig:cmul-f}
 \end{figure}
 
+\newpage
 \subsection{ผลการประเมินความพึงพอใจเฉลี่ยโดยรวม}
 \begin{figure}[ht]
     \centering
     \includegraphics[scale=0.4]{images/satisfaction.png}
-    \caption[satisfaction]{ผลการประเมินความพึงพอใจ}
+    \caption[ผลการประเมินความพึงพอใจเฉลี่ยโดยรวม]{ผลการประเมินความพึงพอใจเฉลี่ยโดยรวม}
     \label{fig:satisfaction}
 \end{figure}
 จากนักศึกษาจำนวน 15 คนและทางสำนักหอสมุด 2 คน ได้รับผลประเมินความพึงพอใจโดยรวมเฉลี่ยถือว่าอยู่ในระดับที่ดี
